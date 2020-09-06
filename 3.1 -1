@@ -1,0 +1,20 @@
+function ispalindrome(str){
+
+	var reversed=str.split("").reverse().join("");
+
+	if(reversed==str)return true;
+	return false;
+
+/* 1.The split() method splits a String object into an
+       array of string by separating the string into sub strings.
+       
+ 2.The reverse() method reverses an array in place. The first 
+   array element becomes the last and the last becomes the first.
+   
+ 3.The join() method joins all elements of an array into a 
+     string.
+  */
+}
+
+console.log(ispalindrome("nayeem"));
+console.log(ispalindrome("emame"));
