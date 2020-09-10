@@ -16,3 +16,22 @@ function  greatestCommonDivisor(a,b){
 
 var v=greatestCommonDivisor(66,55);
 console.log(v);
+
+
+//আমি নিজে রিকার্সন পদ্ধতিতে একটি কোড দিচ্ছি।
+// এই কোডটা ঝংকার মাহবুব ভাইয়া
+// এর ওয়েবসাইট থেকে নেওয়া!!! যদিও আমি
+// নিজেও কোডটি বুঝিনি
+
+function greatestCommonDivisor(a,b){
+    if(b==0){
+ 
+        return a;
+    }
+    else{
+        return greatestCommonDivisor(b,a%b);
+   }
+}
+
+var v=greatestCommonDivisor(23,23);
+console.log(v);
