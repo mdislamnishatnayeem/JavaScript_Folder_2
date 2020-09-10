@@ -1,0 +1,14 @@
+
+
+
+
+function evennumbers(n){
+    var series=[];
+    for(var i=1;i<=n;i++){
+        var element=i*2;
+        series.push(element);
+    }
+    return series;
+}
+var v=evennumbers(8);
+console.log(v);
