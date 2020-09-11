@@ -1,0 +1,25 @@
+
+
+function mergesorteArray(first,second){
+    var length=first.length+second.length;
+    var merged=[];
+    var j=0;
+    var k=0;
+    for(var i=0;i<length;i++){
+        if(first [j]<second[k]||second[k]==undefined){
+            merged.push(first[j]);
+            j++;   
+   
+            
+        }
+        else{
+            merged.push(second[k]);
+            k++;
+        }
+    }
+    return merged;
+}
+var v=mergesorteArray([3,9],[1,2,3]);
+
+
+console.log(v);
