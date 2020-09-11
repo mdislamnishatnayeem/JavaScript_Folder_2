@@ -1,0 +1,28 @@
+
+
+var gorus=[
+   { price: 9000 ,nationality:"desi", isTablet :false},
+   
+   { price: 16000 ,nationality:"desi", isTablet :false},
+   
+   { price: 69000 ,nationality:"Indian", isTablet :true},
+   
+   { price: 170000 ,nationality:"Australian", isTablet :false},
+   
+   { price: 45000 ,nationality:"desi", isTablet :true},
+   
+   { price: 85000 ,nationality:"Indian", isTablet :true},
+   
+   { price: 135000 ,nationality:"Australian", isTablet :true}
+   
+ ]
+ 
+ var selectgoru=[];
+ for(var i=0;i<gorus.length;i++){
+ 	var goru=gorus[i];
+ 	if(goru.price>150000){
+ 		selectgoru.push(goru);
+ 	}
+ }
+ console.log(selectgoru);
+ 
